@@ -1,0 +1,227 @@
+/* General Reset */
+* .container{
+  margin-top: 20px;
+}
+
+/* Body and General Styling */
+
+body {
+  /* this is from google fonts! */
+  font-family: 'Trirong', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 0.8;
+  color: #06402B;
+}
+
+a {
+  text-decoration: none;
+}
+
+.artwork-item {
+  border-radius: 8px;
+}
+
+.artwork-item:hover {
+  transform: scale(1.05);
+}
+
+.artwork-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.artwork-description {
+  margin-bottom: 10px;
+}
+.artwork-year {
+  margin-bottom: 50px;
+}
+
+.about p {
+  font-size: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1;
+
+}
+
+/* Header */
+header {
+  background-color: #06402B;
+  color: #E8EBE0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+body h1 {
+  font-size: 2.5em; /* FIXME: convert to pixel. */
+  /* margin-bottom: 1px; */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  /* padding: 8px 0; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav a {
+  color: hsl(336, 100%, 83%);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #f4a261;
+}
+
+nav a:visited {
+  color: orchid;
+  /* color: pink; */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* Main Content Layout */
+main {
+  padding: 40px 10px;
+}
+
+#portfolio {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* About Me Section */
+#about {
+  text-align: center;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+#about p {
+  font-size: 1.2em;
+  color: #06402B;
+  line-height: 1;
+}
+
+
+/* Contact Section */
+#contact {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#contact button {
+  background-color: #f4a261;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #e76f51;
+}
+
+/* Footer */
+footer {
+  background-color: #06402B;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+
+#gallery {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* saul added the styles below */
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* END saul's styles */
+
+/* media query. */
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.8em;
+  }
+
+  nav a {
+      font-size: 0.9em;
+      margin: 0 8px;
+  }
+
+  #gallery {
+      grid-template-columns: 1fr;
+  }
+
+  #about img {
+      width: 150px;
+      height: 150px;
+  }
+}
